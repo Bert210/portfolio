@@ -8,33 +8,43 @@
 import React from 'react'
 import glamorous from 'glamorous'
 
+const OrangeColor = '#e4532c'
+const DarkGray = '#2c2c2d'
+
 const NavContainer = glamorous.div({
+	borderBottom: '2px solid ' + OrangeColor,
 	display: 'inline-block',
 	width: '100%',
 })
 
-const Title = glamorous.h1({
-	color: 'red',
-	backgroundColor: 'white',
+const Title = glamorous.div({
+	color: OrangeColor,
+	fontSize: '2em',
+	margin: '1rem',
+	// backgroundColor: '#e9572c',
 	display: 'inline-block',
 })
 
 const NavLinks = glamorous.div({
 	display: 'inline-block',
-	
+	float: 'right',
+	margin: '1rem'
 })
 
 const Link = glamorous.a({
 	display: 'inline-block',
 	margin: '0.2rem',
-	backgroundColor: '#333',
+	backgroundColor: '#fff',
 	textDecoration: 'none',
     padding: '10px 20px',
+    border: '1px solid ' + OrangeColor,
     textAlign: 'center',
     transition: '0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97)',
     borderRadius: 4,
-    color: '#fff',
+    color: OrangeColor,
 	':hover' : {
+		backgroundColor: OrangeColor,
+		color: 'white'
 	}
 })
 

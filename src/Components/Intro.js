@@ -10,19 +10,33 @@ import React from 'react'
 import glamorous from 'glamorous'
 
 const IntroContainer = glamorous.div({
+	display: 'flex',
 	height: 500,
 	width: '100%',
 	background: 'url(background.jpeg)',
+	backgroundSize: 'cover',
+})
+
+const Center = glamorous.div({
+	margin: 'auto',
 })
 
 const Name = glamorous.div({
 	color: 'white',
-	fontSize: 24,
+	fontSize: '3rem',
+})
+
+const Info = glamorous.div({
+	color:'white',
+	textAlign: 'center',
 })
 
 const Intro = () => (
 	<IntroContainer>
-		<Name>Robert</Name>
+		<Center>
+			<Name>Robert Utchel</Name>
+			<Info>A React Programmer</Info>
+		</Center>	
 	</IntroContainer>
 )
 

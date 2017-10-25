@@ -8,11 +8,12 @@
 import React from 'react'
 import glamorous from 'glamorous'
 
-import {OrangeColor} from './Colors'
+import {OrangeColor, LightGray} from './Colors'
 
 
 const NavContainer = glamorous.div({
 	borderBottom: '2px solid ' + OrangeColor,
+	backgroundColor: LightGray,
 	display: 'inline-block',
 	width: '100%',
 })
@@ -20,8 +21,8 @@ const NavContainer = glamorous.div({
 const Title = glamorous.div({
 	color: OrangeColor,
 	fontSize: '2em',
+	fontWeight: 'bold',
 	margin: '1rem',
-	// backgroundColor: '#e9572c',
 	display: 'inline-block',
 
 })
@@ -35,7 +36,7 @@ const NavLinks = glamorous.div({
 const Link = glamorous.a({
 	display: 'inline-block',
 	margin: '0.2rem',
-	backgroundColor: '#fff',
+	backgroundColor: LightGray,
 	textDecoration: 'none',
     padding: '10px 20px',
     border: '2px solid ' + OrangeColor,
@@ -45,7 +46,7 @@ const Link = glamorous.a({
     color: OrangeColor,
 	':hover' : {
 		backgroundColor: OrangeColor,
-		color: 'white'
+		color: LightGray
 	}
 
 })

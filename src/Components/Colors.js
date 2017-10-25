@@ -8,3 +8,4 @@
 
 export const OrangeColor = '#e4532c'
 export const DarkGray = '#2c2c2d'
+export const LightGray = '#eee'

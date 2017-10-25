@@ -7,35 +7,79 @@
 **/
 import React from 'react'
 
-import glamorous from 'glamorous'
+import glamorous, {H1} from 'glamorous'
 
-const ProjectImage = glamorous.img({
-	width: '200px',
+import {OrangeColor, LightGray, DarkGray} from './Colors'
 
+const ProjectsContainer = glamorous.div({
+	textAlign: 'center',
+	backgroundColor: LightGray,
 })
 
+const ProjectContainer = glamorous.div({
+	height: 500,
+	display: 'flex',
+}, ({image}) => ({
+	backgroundImage: `url(${image})`,
+	backgroundSize: 'cover',
+	backgroundPosition: 'center',
+	opacity: 0.5,
+	':hover': {
+		opacity: 1,
+	}
+}))
+
+
+const Title = glamorous.p({
+	fontSize: '2rem',
+	fontWeight: 'bold',
+	zIndex: 100,
+	color: 'white',
+	margin: 'auto',
+})
+
+// const ProjectImage = glamorous.img({
+// 	width: '100%',
+// 	zIndex: -1,
+// 	opacity: 0.5,
+// 	':hover': {
+// 		opacity: 0.75,
+// 	}
+
+// })
+
 const listOfProjects = [
-	{image:"./img/nfldataviewer.png", title:"nfldataviewer", info:"A simple visualiztion of NFL teams"},
+	{image:"./img/nfldataviewer.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
 	// {image:"", title:"", info:""},
 ]
+
+const ProjectDescription = glamorous.div({
+	backgroundColor: 'rgba(0,0,0,0.5)',
+	borderRadius: '1rem',
+	margin: 'auto',
+	width: '25%',
+	color: 'white',
+	// height: '25%',
+})
 
 
 
 const formatProject = (project) => (
-	<div key={project.title}>
-		<ProjectImage src={project.image} alt={project.title} />
-		<h1>{project.title}</h1>
-		<p>{project.info}</p>
-	</div>
+	<ProjectContainer key={project.title} image={project.image}>
+		<ProjectDescription>
+			<Title>{project.title}</Title>
+			<p>{project.info}</p>
+		</ProjectDescription>
+	</ProjectContainer>
 )
 
 const Projects = () => (
-	<div>
-		<h1>Projects</h1>
+	<ProjectsContainer>
+		<H1 margin={0} padding={"1rem 0"} color={OrangeColor}>Projects</H1>
 		<div>
 			{listOfProjects.map((projects) => (formatProject(projects)))}
 		</div>
-	</div>
+	</ProjectsContainer>
 )
 
 export default Projects

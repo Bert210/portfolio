@@ -8,8 +8,8 @@
 import React from 'react'
 import glamorous from 'glamorous'
 
-const OrangeColor = '#e4532c'
-const DarkGray = '#2c2c2d'
+import {OrangeColor} from './Colors'
+
 
 const NavContainer = glamorous.div({
 	borderBottom: '2px solid ' + OrangeColor,
@@ -23,6 +23,7 @@ const Title = glamorous.div({
 	margin: '1rem',
 	// backgroundColor: '#e9572c',
 	display: 'inline-block',
+
 })
 
 const NavLinks = glamorous.div({
@@ -37,7 +38,7 @@ const Link = glamorous.a({
 	backgroundColor: '#fff',
 	textDecoration: 'none',
     padding: '10px 20px',
-    border: '1px solid ' + OrangeColor,
+    border: '2px solid ' + OrangeColor,
     textAlign: 'center',
     transition: '0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97)',
     borderRadius: 4,
@@ -46,6 +47,7 @@ const Link = glamorous.a({
 		backgroundColor: OrangeColor,
 		color: 'white'
 	}
+
 })
 
 
@@ -55,7 +57,7 @@ const Nav = () => {
 			<Title>Robert Utchel</Title>
 			<NavLinks>
 				<Link href='/'>Home</Link>
-				<Link href='/projects'>Projects</Link>
+				<Link href='/#projects'>Projects</Link>
 				<Link href='/blog'>Blog</Link>
 				<Link href='/contact'>Contact</Link>
 			</NavLinks>

@@ -9,12 +9,15 @@
 import React from 'react'
 import glamorous from 'glamorous'
 
+import {OrangeColor} from './Colors'
+
 const IntroContainer = glamorous.div({
 	display: 'flex',
 	height: 500,
 	width: '100%',
 	background: 'url(background.jpeg)',
 	backgroundSize: 'cover',
+	borderBottom: '2px solid ' + OrangeColor
 })
 
 const Center = glamorous.div({

@@ -17,7 +17,8 @@ const IntroContainer = glamorous.div({
 	width: '100%',
 	background: 'url(background.jpeg)',
 	backgroundSize: 'cover',
-	borderBottom: '2px solid ' + OrangeColor
+	borderBottom: '2px solid ' + OrangeColor,
+	// backgroundAttachment: 'fixed',
 })
 
 const Center = glamorous.div({

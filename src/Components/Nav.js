@@ -42,7 +42,7 @@ const Link = glamorous.a({
     border: '2px solid ' + OrangeColor,
     textAlign: 'center',
     transition: '0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97)',
-    borderRadius: 4,
+    // borderRadius: 4,
     color: OrangeColor,
 	':hover' : {
 		backgroundColor: OrangeColor,

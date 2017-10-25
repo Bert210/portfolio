@@ -14,18 +14,22 @@ import {OrangeColor, LightGray, DarkGray} from './Colors'
 const ProjectsContainer = glamorous.div({
 	textAlign: 'center',
 	backgroundColor: LightGray,
+	paddingBottom: '15%',
 })
 
 const ProjectContainer = glamorous.div({
 	height: 500,
 	display: 'flex',
+	borderTop: '1px solid ' + OrangeColor,
+	borderBottom: '1px solid ' + OrangeColor,
 }, ({image}) => ({
 	backgroundImage: `url(${image})`,
-	backgroundSize: 'cover',
+	backgroundSize: 'contain',
 	backgroundPosition: 'center',
+	backgroundAttachment: 'fixed',
 	opacity: 0.5,
 	':hover': {
-		opacity: 1,
+		// opacity: 1,
 	}
 }))
 
@@ -49,6 +53,9 @@ const Title = glamorous.p({
 // })
 
 const listOfProjects = [
+	{image:"./img/nfldataviewer.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
+	{image:"./img/code.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
+	{image:"./img/programmer.jpeg", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
 	{image:"./img/nfldataviewer.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
 	// {image:"", title:"", info:""},
 ]

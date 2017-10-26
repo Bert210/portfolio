@@ -29,7 +29,6 @@ const ProjectContainer = glamorous.div({
 	backgroundAttachment: 'fixed',
 	opacity: 0.5,
 	':hover': {
-		// opacity: 1,
 	}
 }))
 
@@ -41,16 +40,6 @@ const Title = glamorous.p({
 	color: 'white',
 	margin: 'auto',
 })
-
-// const ProjectImage = glamorous.img({
-// 	width: '100%',
-// 	zIndex: -1,
-// 	opacity: 0.5,
-// 	':hover': {
-// 		opacity: 0.75,
-// 	}
-
-// })
 
 const listOfProjects = [
 	{image:"./img/nfldataviewer.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},

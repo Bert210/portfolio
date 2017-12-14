@@ -42,7 +42,7 @@ const Title = glamorous.p({
 })
 
 const listOfProjects = [
-	{image:"./img/nfldataviewer.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
+	{image:"./img/nfldataviewer.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams", url:"www.nfldataviewer.utchel.com"},
 	{image:"./img/code.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
 	{image:"./img/programmer.jpeg", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
 	{image:"./img/nfldataviewer.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},

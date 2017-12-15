@@ -59,8 +59,8 @@ const Nav = () => {
 			<NavLinks>
 				<Link href='/'>Home</Link>
 				<Link href='/#projects'>Projects</Link>
-				<Link href='/blog'>Blog</Link>
-				<Link href='/contact'>Contact</Link>
+				<Link href='/#blog'>Blog</Link>
+				<Link href='/#contact'>Contact</Link>
 			</NavLinks>
 		</NavContainer>
 	)

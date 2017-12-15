@@ -42,10 +42,30 @@ const Title = glamorous.p({
 })
 
 const listOfProjects = [
-	{image:"./img/nfldataviewer.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams", url:"www.nfldataviewer.utchel.com"},
-	{image:"./img/code.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
-	{image:"./img/programmer.jpeg", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
-	{image:"./img/nfldataviewer.png", title:"NFL Data Viewer", info:"A simple visualiztion of NFL teams"},
+	{
+		image:"./img/nfldataviewer.png", 
+		title:"NFL Data Viewer", 
+		info:"A simple visualiztion of NFL teams", 
+		url:"www.nfldataviewer.utchel.com",
+		github:"www.github.com/bert210/nfldataviewer"
+	},
+	{
+		image:"./img/code.png", 
+		title:"Work Week", 
+		info:"A Punchcard emulator", 
+		url: "www.utchel.com/workweek", 
+		github:"www.github.com/bert210/workweek"
+	},
+	{
+		image:"./img/programmer.jpeg", 
+		title:"NFL Data Viewer", 
+		info:"A simple visualiztion of NFL teams"
+	},
+	{
+		image:"./img/nfldataviewer.png", 
+		title:"NFL Data Viewer", 
+		info:"A simple visualiztion of NFL teams"
+	},
 	// {image:"", title:"", info:""},
 ]
 

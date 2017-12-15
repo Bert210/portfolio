@@ -27,7 +27,7 @@ const ProjectContainer = glamorous.div({
 	backgroundSize: 'contain',
 	backgroundPosition: 'center',
 	backgroundAttachment: 'fixed',
-	opacity: 0.5,
+	// opacity: 0.5,
 	':hover': {
 	}
 }))
@@ -46,15 +46,15 @@ const listOfProjects = [
 		image:"./img/nfldataviewer.png", 
 		title:"NFL Data Viewer", 
 		info:"A simple visualiztion of NFL teams", 
-		url:"www.nfldataviewer.utchel.com",
-		github:"www.github.com/bert210/nfldataviewer"
+		url:"www.utchel.com/nfldataviewer",
+		github:"www.github.com/Bert210/nfldataviewer"
 	},
 	{
 		image:"./img/code.png", 
 		title:"Work Week", 
 		info:"A Punchcard emulator", 
 		url: "www.utchel.com/workweek", 
-		github:"www.github.com/bert210/workweek"
+		github:"www.github.com/Bert210/workweek"
 	},
 	{
 		image:"./img/programmer.jpeg", 
@@ -70,7 +70,7 @@ const listOfProjects = [
 ]
 
 const ProjectDescription = glamorous.div({
-	backgroundColor: 'rgba(0,0,0,0.5)',
+	backgroundColor: 'rgba(0,0,0)',
 	borderRadius: '1rem',
 	margin: 'auto',
 	width: '25%',
@@ -85,6 +85,10 @@ const formatProject = (project) => (
 		<ProjectDescription>
 			<Title>{project.title}</Title>
 			<p>{project.info}</p>
+			<div>
+				<a href={project.url}>Live Page</a>
+				<a href={project.github}><i className="fa fa-github"></i></a>
+			</div>
 		</ProjectDescription>
 	</ProjectContainer>
 )

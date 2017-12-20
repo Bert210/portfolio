@@ -46,7 +46,7 @@ const listOfProjects = [
 		image:"./img/nfldataviewer.png", 
 		title:"NFL Data Viewer", 
 		info:"A simple visualiztion of NFL teams", 
-		url:"www.utchel.com/nfldataviewer",
+		url:"/nfldataviewer",
 		github:"www.github.com/Bert210/nfldataviewer"
 	},
 	{

@@ -19,6 +19,9 @@ const ProjectsContainer = glamorous.div({
 
 const ProjectContainer = glamorous.div({
 	height: 500,
+	maxWidth: 960,
+	marginLeft: 'auto',
+	marginRight: 'auto',
 	display: 'flex',
 	borderTop: '1px solid ' + OrangeColor,
 	borderBottom: '1px solid ' + OrangeColor,
@@ -46,15 +49,15 @@ const listOfProjects = [
 		image:"./img/nfldataviewer.png", 
 		title:"NFL Data Viewer", 
 		info:"A simple visualiztion of NFL teams", 
-		url:"www.utchel.com/nfldataviewer",
-		github:"www.github.com/Bert210/nfldataviewer"
+		url:"http://www.utchel.com/nfldataviewer",
+		github:"https://www.github.com/Bert210/nfldataviewer"
 	},
 	{
 		image:"./img/code.png", 
 		title:"Work Week", 
 		info:"A Punchcard emulator", 
-		url: "www.utchel.com/workweek", 
-		github:"www.github.com/Bert210/workweek"
+		url: "http://www.utchel.com/workweek", 
+		github:"https://www.github.com/Bert210/workweek"
 	},
 	{
 		image:"./img/programmer.jpeg", 
@@ -94,12 +97,14 @@ const formatProject = (project) => (
 )
 
 const Projects = () => (
-	<ProjectsContainer>
-		<H1 margin={0} padding={"1rem 0"} color={OrangeColor}>Projects</H1>
-		<div>
-			{listOfProjects.map((projects) => (formatProject(projects)))}
-		</div>
-	</ProjectsContainer>
+	<section>
+		<ProjectsContainer>
+			<H1 margin={0} padding={"1rem 0"} color={OrangeColor}>Projects</H1>
+			<div>
+				{listOfProjects.map((projects) => (formatProject(projects)))}
+			</div>
+		</ProjectsContainer>
+	</section>
 )
 
 export default Projects

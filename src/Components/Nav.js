@@ -8,7 +8,9 @@
 import React from 'react'
 import glamorous from 'glamorous'
 
-import {OrangeColor, LightGray} from './Colors'
+import {OrangeColor, LightGray, DarkGray} from './Colors'
+
+import './Nav.css'
 
 
 const NavContainer = glamorous.div({
@@ -34,33 +36,39 @@ const NavLinks = glamorous.div({
 })
 
 const Link = glamorous.a({
+	outline: 0,
 	display: 'inline-block',
 	margin: '0.2rem',
-	backgroundColor: LightGray,
+	// backgroundColor: LightGray,
 	textDecoration: 'none',
     padding: '10px 20px',
-    border: '2px solid ' + OrangeColor,
-    textAlign: 'center',
+    // border: '2px solid ' + OrangeColor,
+	textAlign: 'center',
     transition: '0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97)',
     // borderRadius: 4,
-    color: OrangeColor,
+    color: DarkGray,
 	':hover' : {
-		backgroundColor: OrangeColor,
-		color: LightGray
+		// backgroundColor: ,
+		color: OrangeColor
 	}
 
 })
 
+let active = (urlName) => {
+	return document.URL.split('/').slice(-1)[0] === urlName;			
+}
 
 const Nav = () => {
+	console.log(active('#home'));
 	return (
+
 		<NavContainer>
 			<Title>Robert Utchel</Title>
 			<NavLinks>
-				<Link href='/'>Home</Link>
-				<Link href='/#projects'>Projects</Link>
-				<Link href='/#blog'>Blog</Link>
-				<Link href='/#contact'>Contact</Link>
+				<Link href='/#home' className={ active('#home') ? 'nav-link-active' : ''}>Home</Link>
+				<Link href='/#projects' className={ active('#home') ? 'nav-link-active' : ''}>Projects</Link>
+				<Link href='/#blog' className={ active('#home') ? 'nav-link-active' : ''}>Blog</Link>
+				<Link href='/#contact' className={ active('#home') ? 'nav-link-active' : ''}>Contact</Link>
 			</NavLinks>
 		</NavContainer>
 	)

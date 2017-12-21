@@ -13,6 +13,7 @@ class App extends Component {
 				<Nav />
 				<Intro />
 				<Projects />
+				<p>Hello Marty</p>
 			</div>
     	);
   }

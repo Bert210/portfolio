@@ -1,9 +1,7 @@
 .App {
-    max-width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
-    /* border: solid 2px black;     */
-    /* border-right: solid 2px black; */
-    /* border-left: solid 2px black; */
-    
-}
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  /* border: solid 2px black;     */
+  /* border-right: solid 2px black; */
+  /* border-left: solid 2px black; */ }

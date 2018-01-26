@@ -42,38 +42,11 @@ const Title = glamorous.p({
 	zIndex: 100,
 	color: 'white',
 	margin: 'auto',
+	
 })
 
-const listOfProjects = [
-	{
-		image:"./img/nfldataviewer.png", 
-		title:"NFL Data Viewer", 
-		info:"A simple visualiztion of NFL teams", 
-		url:"http://www.utchel.com/nfldataviewer",
-		github:"https://www.github.com/Bert210/nfldataviewer"
-	},
-	{
-		image:"./img/code.png", 
-		title:"Work Week", 
-		info:"A Punchcard emulator", 
-		url: "http://www.utchel.com/workweek", 
-		github:"https://www.github.com/Bert210/workweek"
-	},
-	{
-		image:"./img/programmer.jpeg", 
-		title:"NFL Data Viewer", 
-		info:"A simple visualiztion of NFL teams"
-	},
-	{
-		image:"./img/nfldataviewer.png", 
-		title:"NFL Data Viewer", 
-		info:"A simple visualiztion of NFL teams"
-	},
-	// {image:"", title:"", info:""},
-]
-
 const ProjectDescription = glamorous.div({
-	backgroundColor: 'rgba(0,0,0)',
+	backgroundColor: 'rgba(0, 0, 0, 1)',
 	borderRadius: '1rem',
 	margin: 'auto',
 	width: '25%',
@@ -81,6 +54,33 @@ const ProjectDescription = glamorous.div({
 	// height: '25%',
 })
 
+const listOfProjects = [
+	{
+		image:"./img/nfldataviewer.png",
+		title:"NFL Data Viewer",
+		info:"A simple visualiztion of NFL teams",
+		url:"http://www.utchel.com/nfldataviewer",
+		github:"https://www.github.com/Bert210/nfldataviewer"
+	},
+	{
+		image:"./img/code.png",
+		title:"Work Week",
+		info:"A Punchcard emulator",
+		url: "http://www.utchel.com/workweek",
+		github:"https://www.github.com/Bert210/workweek"
+	},
+	{
+		image:"./img/programmer.jpeg",
+		title:"NFL Data Viewer",
+		info:"A simple visualiztion of NFL teams"
+	},
+	{
+		image:"./img/nfldataviewer.png",
+		title:"NFL Data Viewer",
+		info:"A simple visualiztion of NFL teams"
+	},
+	// {image:"", title:"", info:""},
+]
 
 
 const formatProject = (project) => (
@@ -101,7 +101,7 @@ const Projects = () => (
 		<ProjectsContainer>
 			<H1 margin={0} padding={"1rem 0"} color={OrangeColor}>Projects</H1>
 			<div>
-				{listOfProjects.map((projects) => (formatProject(projects)))}
+				{listOfProjects.map(projects => formatProject(projects))}
 			</div>
 		</ProjectsContainer>
 	</section>

@@ -67,7 +67,7 @@ const Nav = () => {
 			<NavLinks>
 				<Link href='/#home' className={ active('#home') ? 'nav-link-active' : ''}>Home</Link>
 				<Link href='/#projects' className={ active('#home') ? 'nav-link-active' : ''}>Projects</Link>
-				<Link href='/#blog' className={ active('#home') ? 'nav-link-active' : ''}>Blog</Link>
+				<Link href='http://blog.utchel.com' className={ active('#home') ? 'nav-link-active' : ''}>Blog</Link>
 				<Link href='/#contact' className={ active('#home') ? 'nav-link-active' : ''}>Contact</Link>
 			</NavLinks>
 		</NavContainer>

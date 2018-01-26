@@ -9,7 +9,7 @@
 import React from 'react'
 import glamorous from 'glamorous'
 
-import {OrangeColor} from './Colors'
+import { OrangeColor } from './Colors'
 
 const IntroContainer = glamorous.div({
 	display: 'flex',
